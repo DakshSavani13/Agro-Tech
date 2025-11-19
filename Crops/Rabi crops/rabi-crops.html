@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabi Crop - Agro Tech</title>
+    <link rel="stylesheet" href="rabi-crops.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/home page/logo.jpeg" alt="Agro Tech">
+            </div>
+            <div class="header-right">
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search here" oninput="showSuggestions(this.value)">
+                    <button onclick="searchCrops()">Search</button>
+                    <div id="suggestions" class="suggestions-box"></div>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/home page/index.html" class="nav-link">Home</a></li>
+                    </ul>
+                </nav>
+        </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="Rabi-Crop">
+            <h1>Rabi crop List</h1>
+            <p>Explore various Rabi Crops</p>
+        </section>
+
+        <section class="Rabi-Crop-gallery">
+            <article class="Rabi-Crop-item">
+                <a href="Alfalfa.html">
+                    <img src="Alfalfa.jpg" alt="Alfalfa">
+                    <div class="Rabi-Crop-info">
+                        <h2>Alfalfa</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Aloe Vera.html">
+                    <img src="Aloe Vera.avif" alt="Aloe Vera">
+                    <div class="Rabi-Crop-info">
+                        <h2>Aloe Vera</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Barley.html">
+                    <img src="Barley.avif" alt="Barley">
+                    <div class="Rabi-Crop-info">
+                        <h2>Barley</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Beetroot.html">
+                    <img src="Beetroot.jpg" alt="Beetroot">
+                    <div class="Rabi-Crop-info">
+                        <h2>Beetroot</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Broccoli.html">
+                    <img src="Broccoli.jpg" alt="Broccoli">
+                    <div class="Rabi-Crop-info">
+                        <h2>Broccoli</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Carrot.html">
+                    <img src="Carrot.jpg" alt="Carrot">
+                    <div class="Rabi-Crop-info">
+                        <h2>Carrot</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Chickpea.html">
+                    <img src="Chickpea.jpg" alt="Chickpea">
+                    <div class="Rabi-Crop-info">
+                        <h2>Chickpea</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Cabbage.html">
+                    <img src="Cabbage.avif" alt="Cabbage">
+                    <div class="Rabi-Crop-info">
+                        <h2>Cabbage</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Cauliflower.html">
+                    <img src="Cauliflower.avif" alt="Cauliflower">
+                    <div class="Rabi-Crop-info">
+                        <h2>Cauliflower</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Dill.html">
+                    <img src="Dill.avif" alt="Dill">
+                    <div class="Rabi-Crop-info">
+                        <h2>Dill</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Endive.html">
+                    <img src="Endive.jpg" alt="Endive">
+                    <div class="Rabi-Crop-info">
+                        <h2>Endive</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Fenugreek.html">
+                    <img src="Fenugreek.avif" alt="Fenugreek">
+                    <div class="Rabi-Crop-info">
+                        <h2>Fenugreek</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Fennel.html">
+                    <img src="Fennel.avif" alt="Fennel">
+                    <div class="Rabi-Crop-info">
+                        <h2>Fennel</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Garlic.html">
+                    <img src="Garlic.jpg" alt="Garlic">
+                    <div class="Rabi-Crop-info">
+                        <h2>Garlic</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Green Peas.html">
+                    <img src="Green Peas.webp" alt="Green Peas">
+                    <div class="Rabi-Crop-info">
+                        <h2>Green Peas</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Horse Gram.html">
+                    <img src="Horse Gram.webp" alt="Horse Gram">
+                    <div class="Rabi-Crop-info">
+                        <h2>Horse Gram</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Indian Mustard.html">
+                    <img src="Indian Mustard.avif" alt="Indian Mustard">
+                    <div class="Rabi-Crop-info">
+                        <h2>Indian Mustard</h2>
+                    </div>
+                </a>
+            </article>
+           
+            <article class="Rabi-Crop-item">
+                <a href="Kale.html">
+                    <img src="Kale.avif" alt="Kale">
+                    <div class="Rabi-Crop-info">
+                        <h2>Kale</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Kidney Beans.html">
+                    <img src="Kidney Beans.avif" alt="Kidney Beans">
+                    <div class="Rabi-Crop-info">
+                        <h2>Kidney Beans</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Lettuce.html">
+                    <img src="Lettuce.webp" alt="Lettuce">
+                    <div class="Rabi-Crop-info">
+                        <h2>Lettuce</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Linseed.html">
+                    <img src="Linseed.webp" alt="Linseed">
+                    <div class="Rabi-Crop-info">
+                        <h2>Linseed</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Oats.html">
+                    <img src="Oats.jpg" alt="Oats">
+                    <div class="Rabi-Crop-info">
+                        <h2>Oats</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Peas.html">
+                    <img src="Peas.jpg" alt="Peas">
+                    <div class="Rabi-Crop-info">
+                        <h2>Peas</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Potato.html">
+                    <img src="Potato.webp" alt="Potato">
+                    <div class="Rabi-Crop-info">
+                        <h2>Potato</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Radish.html">
+                    <img src="Radish.jpg" alt="Radish">
+                    <div class="Rabi-Crop-info">
+                        <h2>Radish</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Rye.html">
+                    <img src="Rye.avif" alt="Rye">
+                    <div class="Rabi-Crop-info">
+                        <h2>Rye</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Spinach.html">
+                    <img src="Spinach.jpg" alt="Spinach">
+                    <div class="Rabi-Crop-info">
+                        <h2>Spinach</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Sunflower.html">
+                    <img src="Sunflower.webp" alt="Sunflower">
+                    <div class="Rabi-Crop-info">
+                        <h2>Sunflower</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Sesame.html">
+                    <img src="Sesame.jpg" alt="Sesame">
+                    <div class="Rabi-Crop-info">
+                        <h2>Sesame</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Tomato.html">
+                    <img src="Tomato.webp" alt="Tomato">
+                    <div class="Rabi-Crop-info">
+                        <h2>Tomato</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Turnip.html">
+                    <img src="Turnip.avif" alt="Turnip">
+                    <div class="Rabi-Crop-info">
+                        <h2>Turnip</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Upland Cress.html">
+                    <img src="Upland Cress.jpg" alt="Upland Cress">
+                    <div class="Rabi-Crop-info">
+                        <h2>Upland Cress</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Vetch.html">
+                    <img src="Vetch.png" alt="Vetch">
+                    <div class="Rabi-Crop-info">
+                        <h2>Vetch</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Wheat.html">
+                    <img src="Wheat.avif" alt="Wheat">
+                    <div class="Rabi-Crop-info">
+                        <h2>Wheat</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Xerophyte.html">
+                    <img src="Xerophyte.jpg" alt="Xerophyte">
+                    <div class="Rabi-Crop-info">
+                        <h2>Xerophyte</h2>
+                    </div>
+                </a>
+            </article>
+            <article class="Rabi-Crop-item">
+                <a href="Yam Bean.html">
+                    <img src="Yam Bean.jpg" alt="Yam Bean">
+                    <div class="Rabi-Crop-info">
+                        <h2>Yam Bean</h2>
+                    </div>
+                </a>
+            </article>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Agro Tech. All rights reserved.</p>
+    </footer>
+    <script src="/script/Rabi_Crop.js"></script>
+</body>
+</html>
