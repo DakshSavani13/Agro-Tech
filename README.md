@@ -109,17 +109,5 @@ Open:
 
 ------------------------------------------------------------------------
 
-## 🌐 Deployment
 
-Deploy on:
 
--   GitHub Pages\
--   Netlify\
--   Vercel\
--   Azure Static Web Apps
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-Open-source for academic & learning use.
